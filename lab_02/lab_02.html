@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <style>
         body {
             background-color: #2f2f2f;
@@ -12,6 +13,9 @@
     </style>
 </head>
 <body style="color: orangered;">
-    <h3>The body has a background-color attribute set in style tag inside this document, and the color attribute set using inline styles.</h3>
+    <h2>The body has a background-color attribute set in style tag inside this document, and the color attribute set using inline styles.</h2>
+    <div>This one doesn't have a class or an ID - it's styles are determined by the general div styles.</div>
+    <div class="class1">This one has a class, so we can use different styles for it.</div>
+    <div class="class1" id="id1">This one has both the same class and the unique ID. We can override it's styles compared to the rest of the class members.</div>
 </body>
 </html>
