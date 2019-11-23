@@ -15,18 +15,20 @@
 <body style="color: orangered;">
     <h2>The body has a background-color attribute set in style tag inside this document, and the color attribute set using inline styles.</h2>
 
-    <hr>
-
-    <h4>Id and class styling</h4>
+    <label for="accord1">
+        <h4>Id and class styling</h4>
+    </label>
+    <input type="checkbox" name="accord" id="accord1">
     <div class="parent">
         <div>This one doesn't have a class or an ID - it's styles are determined by the general div styles.</div>
         <div class="class1">This one has a class, so we can use different styles for it.</div>
         <div class="class1" id="id1">This one has both the same class and the unique ID. We can override it's styles compared to the rest of the class members.</div>
     </div>
 
-    <hr>
-
-    <h4>Absolute and relative postitioning</h4>
+    <label for="accord2">
+        <h4>Absolute and relative postitioning</h4>
+    </label>
+    <input type="checkbox" name="accord" id="accord2">
     <!-- parent class has relative positioning -->
     <!-- to allow the absolutely positioned child to be relative to the parent -->
     <!-- and not to the document itself -->
@@ -42,18 +44,17 @@
         <div class="child abs">Child(absolute positioning)</div>
     </div>
 
-    <hr>
-
-    <h4>Float property</h4>
+    <label for="accord3">
+        <h4>Float property</h4>
+    </label>
+    <input type="checkbox" name="accord" id="accord3">
     <div class="parent">
-        <p id="float_comment">Yellow box is out of the boundaries because floated elements don't follow the defaul document flow</p>
+        <p id="float_comment">The floated elements don't take up document space as usual and don't affect other, not floated block elements</p>
         <div class="red box">float right</div>
         <div class="green box">float right</div>
         <div class="blue box">float right</div>
         <div class="yellow box">float right clear right</div>
         <div class="black box">No float</div>
     </div>
-
-    <hr>
 </body>
 </html>

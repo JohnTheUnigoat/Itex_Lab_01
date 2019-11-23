@@ -8,9 +8,14 @@ div {
 }
 
 h2, h4 {
-    margin: 40px;
+    margin: 1%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 200%;
+    padding: 0.1em;
+}
+
+hr {
+    border: 1.5px solid black;
 }
 
 /* Styles for class and ID demonstration */
@@ -34,8 +39,11 @@ h2, h4 {
     color: black;
     padding: 1em;
     background-color: #777;
-    border-radius: 0.7em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
     position: relative;
+    box-shadow: inset 3px 3px 10px black;
+    margin-bottom: 0.3em;
 }
 
 .child {
@@ -99,4 +107,30 @@ h2, h4 {
 
 .black {
     background-color: black;
+}
+
+/* Accordion styles */
+
+.accord {
+    background-color: #777;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + * {
+    display: none;
+}
+
+input[type="checkbox"]:checked + * {
+    display: block;
+}
+
+label {
+    display: block;
+    background-color: #2f2f2f;
+    border: 2px solid black;
 }
