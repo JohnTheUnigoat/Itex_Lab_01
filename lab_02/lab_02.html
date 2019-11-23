@@ -27,19 +27,33 @@
     <hr>
 
     <h4>Absolute and relative postitioning</h4>
-    <!-- parent class has relative positioning
-    to allow the absolutely positioned child to be relative to the parent
-    and not to the document itself -->
+    <!-- parent class has relative positioning -->
+    <!-- to allow the absolutely positioned child to be relative to the parent -->
+    <!-- and not to the document itself -->
     <div class="parent">Parent
         <!-- first child has static(default) positioning -->
         <div class="child">Child(default positioning)</div>
-        <!-- second child has relative positioning - it can be moved relatively to its
-        normal position in the document -->
+        <!-- second child has relative positioning - it can be moved relatively to its -->
+        <!-- normal position in the document -->
         <div class="child rel">Child(relative positioning)</div>
-        <!-- third child is posotioned absolutely -
-        we can set it position relative to the document or parent element.
-        It doesn't affect other elements in any way-->
+        <!-- third child is posotioned absolutely - -->
+        <!-- we can set it position relative to the document or parent element. -->
+        <!-- It doesn't affect other elements in any way -->
         <div class="child abs">Child(absolute positioning)</div>
     </div>
+
+    <hr>
+
+    <h4>Float property</h4>
+    <div class="parent">
+        <p id="float_comment">Yellow box is out of the boundaries because floated elements don't follow the defaul document flow</p>
+        <div class="red box">float right</div>
+        <div class="green box">float right</div>
+        <div class="blue box">float right</div>
+        <div class="yellow box">float right clear right</div>
+        <div class="black box">No float</div>
+    </div>
+
+    <hr>
 </body>
 </html>
