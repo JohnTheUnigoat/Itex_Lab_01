@@ -1,3 +1,4 @@
+/* General styles */
 hr {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -10,6 +11,13 @@ div {
     font-size: 25px;
 }
 
+h2, h4 {
+    margin: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200%;
+}
+
+/* Styles for class and ID demonstration */
 .class1 {
     color: greenyellow;
 }
@@ -23,6 +31,8 @@ div {
     border-radius: 0.3em;
     border: solid greenyellow 3px;
 }
+
+/* Styles for absolute and relative positioning demonstration */
 
 .parent {
     color: black;
@@ -52,4 +62,5 @@ div {
     position: relative;
     top: -10px;
     left: 56px;
+    width: 600px;
 }
