@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="styles.css" type="text/css">
     <style>
         body {
-            background-color: #2f2f2f;
+            background-color: #444;
         }
     </style>
 </head>
 <body style="color: orangered;">
     <h2>The body has a background-color attribute set in style tag inside this document, and the color attribute set using inline styles.</h2>
-    <div>This one doesn't have a class or an ID - it's styles are determined by the general div styles.</div>
-    <div class="class1">This one has a class, so we can use different styles for it.</div>
-    <div class="class1" id="id1">This one has both the same class and the unique ID. We can override it's styles compared to the rest of the class members.</div>
+    <div class="parent">
+        <div>This one doesn't have a class or an ID - it's styles are determined by the general div styles.</div>
+        <div class="class1">This one has a class, so we can use different styles for it.</div>
+        <div class="class1" id="id1">This one has both the same class and the unique ID. We can override it's styles compared to the rest of the class members.</div>
+    </div>
+
+    <hr>
+
+    <!-- parent class has relative positioning
+    to allow the absolutely positioned child to be relative to the parent
+    and not to the document itself -->
+    <div class="parent">Parent
+        <!-- first child has static(default) positioning -->
+        <div class="child">Child(default positioning)</div>
+        <!-- second child has relative positioning - it can be moved relatively to its
+        normal position in the document -->
+        <div class="child rel">Child(relative positioning)</div>
+        <!-- third child is posotioned absolutely -
+        we can set it position relative to the document or parent element.
+        It doesn't affect other elements in any way-->
+        <div class="child abs">Child(absolute positioning)</div>
+    </div>
 </body>
 </html>
