@@ -1,0 +1,50 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.js_table {
+    font-size: 1.4em;
+    border-collapse: collapse;    
+    color: #fff;
+    outline: 3px solid #111;
+}
+
+.js_table td {
+    border: solid black 1px;
+    margin: 0;
+    padding: 10px;
+}
+
+form {
+    width: 20%;
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 1.4em;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.button {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 10px;
+    border: none;
+    color:white;
+    background-color: #333;
+}
+
+.button:hover {
+    background-color: #666;
+}
